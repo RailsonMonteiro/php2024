@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
             $resultado = "";
             for ($i=0;$i<=10;$i++)
             {
-                $resultado .= "$numero * $i = ".$numero*$i;
+                $resultado .= "$numero x $i = ".$numero*$i;
                 $resultado .= "<br>";
             }
             return $resultado;
@@ -49,7 +49,7 @@
             }   elseif ($_GET["acao"] == "tabuada") {
                 echo tabuada($_GET["numero"]);
             }   else {
-                echo "<em>Ação inexistente</em>";
+                echo "<em>Opção Invalida</em>";
             }   else {
                 echo "...Resultado...";
             }
