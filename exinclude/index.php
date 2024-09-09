@@ -13,5 +13,6 @@
         echo "$fruta e $cor <br>";
     ?>
     
+    
 </body>
 </html>
