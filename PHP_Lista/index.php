@@ -4,16 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compras</title>
-    <style>
-        section{
-            width: 500px;
-            height: 250px;
-        }
-        .cantainer{
-            background-color: #A8C7BB;
-        }
-    </style>
-</head>
+   
 <body>
     <section>
         <div class="container">
