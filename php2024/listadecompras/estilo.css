@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: gainsboro;
+}
+
+.conteudo {
+    padding: 10px;
+    margin: 10px auto;
+    border-left: 4px solid gray;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:  whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+details {
+    border-bottom: 1px dashed gray;
+    margin-bottom: 5px;
+}
+
+small {
+    font-size: smaller;
+    color: grey;
+}
+
+button {
+    margin: 0;
+    padding: 5px 5px 3px 5px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+li {
+    list-style-type: '#';
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+#login {
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-size: small;
+}
+
+table.numeros {
+    margin: 30px auto;
+    width: 90%;
+    border-collapse: collapse;
+    padding: 10px 10%;
+}
+
+table.numeros th {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+table.numeros td {
+    border: 1px solid darkgray;
+    padding: 20px;
+    text-align: center;
+}
+
+th.usuarios {
+    background-color: #009800;
+}
+
+th.listas {
+    background-color: #ff6200;
+}
+
+th.itens {
+    background-color: #5500ff;
+}
+
+td.usuarios {
+    background-color: #36dc36;
+}
+
+td.listas {
+    background-color: #fb8a43;
+}
+
+td.itens {
+    background-color: #8b52fe;
+}
