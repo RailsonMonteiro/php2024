@@ -1,5 +1,5 @@
 body {
-    padding: 0;
+    padding: 30px;
     margin: 0;
     background-color: gainsboro;
 }
@@ -67,7 +67,7 @@ table.numeros th {
     width: 33%;
 }
 
-table.numeros td {
+/* table.codigo td {
     border: 1px solid darkgray;
     padding: 20px;
     text-align: center;
@@ -95,7 +95,7 @@ td.listas {
 
 td.itens {
     background-color: #8b52fe;
-}
+} */
 a {
     text-decoration: none;
 }
