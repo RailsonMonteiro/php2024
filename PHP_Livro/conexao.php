@@ -12,13 +12,15 @@
         $db_usuario = 'root';
         $db_senha = '';
 
+        require_once('seguranca.php');
+
         try {
-            $conn = new PDO("mysql:host=$db_servidor;dbname=$db_nome", $db_usuario, $db_senha);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            //echo "Conexão realizada com sucesso";
+           $conn = new PDO("mysql:host=$db_servidor;dbname=$db_nome",$db_usuario,$db_senha);
+           $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         } catch (PDOException $e) {
-            //echo "Erro na conexão: " . $e->getMessage();
-        }
-    ?>
+           echo "Erro ao conectar no Banco de Dados <br>".$e->getMessage(); 
+           exit(1);
+        }       
+    ?>    
 </body>
 </html>
