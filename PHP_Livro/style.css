@@ -28,7 +28,7 @@ small {
 }
 
 button {
-    margin: 0;
+    margin: auto;
     padding: 5px 5px 3px 5px;
     border: none;
     background-color: inherit;
@@ -50,25 +50,39 @@ button:hover {
     text-align: center;
     width: 100%;
     font-style: italic;
-    font-size: small;
+    font-size: 14px;
 }
-/* table {
+table {
     text-align: center;
     font-size: small;
     font-style: italic;
     color: #585858;
-} */
-
-.alterar{
-    margin-left: 10px;
-    margin-right: 5px;
+}
+.tr01{
+    background-color: #959595;
+    color: white;
+}
+.codigo, .nome, .autor, .editora, .ano{
+    padding-left: 30;
+    padding-right: 30px;
+}
+tr{
+    background-color: #ffffff;
+    text-align: center;
+}
+th{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 button {
+    margin: auto;
     color: white;
     height: 30px;
     background-color: #7e7e7e;

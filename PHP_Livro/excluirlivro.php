@@ -24,7 +24,7 @@
 
             //exibir voltar
             echo "<br>";
-            echo "<a href='index.php'>Voltar</a>";
+            echo "<button onclick='history.back()'><i class='fi fi-rr-arrow-left'></i> Voltar</button>";
         }catch(PDOException $e) {
             echo "<pre>";
             echo 'Erro ao executar ' . $e -> getMessage();

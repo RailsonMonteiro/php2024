@@ -22,28 +22,24 @@
 <body>
     <div class="conteudo">
         <h1>Catalogo de Livros</h1>
-         <a href='login.php'><button onclick="location.assign('login.php')"><i class="fi fi-rr-layer-plus"></i> Novo</button></a>
-         
+         <a href='incluirlivro.php'><button onclick="location.assign('incluirlivro.php')"><i class="fi fi-rr-layer-plus"></i></i> Novo</button></a>
         <br><br>
-        <form action="index.php" method="GET">
-            <input type="text" name="ibusca" id="ibusca" placeholder="Pesquisar livro" size="50">
-            <button type="submit"><i class="fi fi-rr-search"></i></button>
-            <br>
-            <br>
-            <br>
+
+       
             <?php
                 require_once 'conexao.php';
-            
-            // Consulta SQL para selecionar todos os livros
+                
+                
+                //Consulta SQL para selecionar todos os livros
                 $stmt = $conn->prepare('SELECT * FROM livros');
                 $stmt->execute();
                 echo "<table>";
                 echo "<tr class='tr01'>";
-                echo "<th>Código</th>";
-                echo "<th>Nome</th>";
-                echo "<th>Autor</th>";
-                echo "<th>Editora</th>";
-                echo "<th>Ano</th>";
+                echo "<th class='codigo'>Código</th>";
+                echo "<th class='nome'>Nome</th>";
+                echo "<th class='autor'>Autor</th>";
+                echo "<th class='editora'>Editora</th>";
+                echo "<th class='ano'>Ano</th>";
                 echo "</tr>";
                 foreach ($stmt as $livro) {
                 echo "<tr>";
@@ -52,15 +48,27 @@
                 echo "<td>" . $livro['autor'] . "</td>";
                 echo "<td>" . $livro['editora'] . "</td>";
                 echo "<td>" . $livro['ano'] . "</td>";
+                echo "<td><a href='alterarlivro.php?codigo=" . $livro['codigo'] . "'><button class='alterarlivro.php'><i class='fi fi-rr-edit'></i></button></a></td>";
+                echo "<td><a href='excluirlivro.php?codigo=" . $livro['codigo'] . "'><button Class='excluirlivro'><i class='fi fi-rr-trash'></i></button></a></td>";
                 echo "</tr>";
                 } 
                 echo "</table>";
                 
                 $conn = null;
             ?>
+            <br><br>
+            <div id='login'>
+                <?php
+                    if (validalogin()) {
+                        echo "  ".$_SESSION['usuario'];
+                        echo "&nbsp;<button onclick=\"location.assign('alterarusuario.php')\"><i class=\"fi fi-rr-edit\"></i></button>";
+                        echo "  ";
+                        echo "<button><a href='logout.php'><i class='fi fi-rr-exit'></i> Sair</a></button>";
+                    };
+                ?>
+            </div>
     
             </table>
-        </form>
     </div>
     <br>    
 </body>

@@ -40,7 +40,7 @@
     ?>
     <br>
     <br>
-    <button onclick="history.back()"><i class="fi fi-rr-arrow-left"></i> Voltar</button>
+    <button onclick="location.assign('aposlogin.php')"><i class="fi fi-rr-arrow-left"></i> Voltar</button>
 
 </body>
 </html>
