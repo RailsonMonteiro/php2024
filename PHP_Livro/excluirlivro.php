@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class="conteudo">
+        <div class="logo">
+            <img src="img/excluir.png" width="90px" height="auto">
+        </div>
         <?php
             require_once('conexao.php');
             
