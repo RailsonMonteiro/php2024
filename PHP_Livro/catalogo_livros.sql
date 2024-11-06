@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06/11/2024 às 20:28
+-- Tempo de geração: 06/11/2024 às 21:56
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -40,7 +40,8 @@ CREATE TABLE `livros` (
 --
 
 INSERT INTO `livros` (`codigo`, `nome`, `autor`, `editora`, `ano`) VALUES
-(123, 'As aventuras de Jack Chan', 'Jack Chan', 'ChingLing', 2000);
+(258, 'as aventuras de jack chan 2', 'monteiro', 'casa', 2024),
+(495, 'A princesa e o sapo', 'historia', 'replica', 1593);
 
 -- --------------------------------------------------------
 
@@ -84,7 +85,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT COMMENT 'codigo do livro.', AUTO_INCREMENT=124;
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT COMMENT 'codigo do livro.', AUTO_INCREMENT=4880;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
