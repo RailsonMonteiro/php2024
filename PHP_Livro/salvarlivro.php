@@ -7,41 +7,42 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="icon" href="img/icon.png" type="32">
 
-    <title>Salva novo livro</title>
+    <title>Livro</title>
 </head>
 <body>
-    <?php
-        //abrir conexao com o banco
-        require_once 'conexao.php';
+    <div class="conteudo">
+        <?php
+            //abrir conexao com o banco
+            require_once 'conexao.php';
 
-        //Executar a inclusão do livro
-        try {
-            $codigo = $_POST['icodigo'];
-            $nome = $_POST['inome'];
-            $autor = $_POST['iautor'];
-            $editora = $_POST['ieditor'];
-            $ano = $_POST['iano'];
+            //Executar a inclusão do livro
+            try {
+                $codigo = $_POST['icodigo'];
+                $nome = $_POST['inome'];
+                $autor = $_POST['iautor'];
+                $editora = $_POST['ieditor'];
+                $ano = $_POST['iano'];
 
-            $fmtquery = "INSERT INTO livros (codigo, nome, autor, editora, ano) VALUES ('%d', '%s', '%s', '%s', '%s')";
-            
-            $query = sprintf($fmtquery,
-                $_POST['icodigo'],
-                $_POST['inome'],
-                $_POST['iautor'],
-                $_POST['ieditor'],
-                $_POST['iano']);
+                $fmtquery = "INSERT INTO livros (codigo, nome, autor, editora, ano) VALUES ('%d', '%s', '%s', '%s', '%s')";
+                
+                $query = sprintf($fmtquery,
+                    $_POST['icodigo'],
+                    $_POST['inome'],
+                    $_POST['iautor'],
+                    $_POST['ieditor'],
+                    $_POST['iano']);
 
-            $stmt = $conn->prepare($query);
-            if ($stmt->execute()) {
-                echo "Livros: ".$nome."<br> incluído com sucesso!";
+                $stmt = $conn->prepare($query);
+                if ($stmt->execute()) {
+                    echo "Livros: ".$nome."<br> incluído com sucesso!";
+                }
+                } catch (PDOException $e) {
+                    echo "Erro: ".$e->getMessage();
             }
-            } catch (PDOException $e) {
-                echo "Erro: ".$e->getMessage();
-        }
-    ?>
-    <br>
-    <br>
-    <button onclick="location.assign('aposlogin.php')"><i class="fi fi-rr-arrow-left"></i> Voltar</button>
-
+        ?>
+        <br>
+        <br>
+        <button onclick="location.assign('aposlogin.php')"><i class="fi fi-rr-arrow-left"></i> Voltar</button>
+     </div>
 </body>
 </html>
