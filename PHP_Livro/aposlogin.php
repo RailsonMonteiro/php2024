@@ -23,7 +23,7 @@
 <body>
     <div class="conteudo">
         <div class="logo">
-            <img src="img/novolivro.png" width="90px" height="auto">
+            <img src="img/livro.png" width="90px" height="auto">
         </div>
          <a href='incluirlivro.php'><button onclick="location.assign('incluirlivro.php')"> Novo Livro</button></a>
         <br><br>

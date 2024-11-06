@@ -30,7 +30,7 @@
         <br><br>
         <form action="index.php" method="GET">
             <input type="text" name="ibusca" id="ibusca" placeholder="Pesquisar livro" size="50">
-            <button type="submit"><i class="fi fi-rr-search"></i></button>
+            <button type="submit" name="ibusca"><i class="fi fi-rr-search"></i></button>
             <br>
             <br>
             <br>
