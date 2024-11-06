@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>  
     <link rel='stylesheet' href='style.css'>
+    <link rel="icon" href="img/icon.png" type="32">
 
-    <title>Lista de Compras - Incluir Lista</title>
+    <title>Livros</title>
 </head>
 <body>
    
     <div class="conteudo">
-        <h1>Incluir Livros</h1>
+        <div class="logo">
+            <img src="img/novolivro.png" width="90px" height="auto">
+        </div>
         <form action="salvarlivro.php" method="post">
             <label for="icodigo">Código:</label>
             <input type="number" name="icodigo" id="icodigo" placeholder="Informe o código do livro" size="80">

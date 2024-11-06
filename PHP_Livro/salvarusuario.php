@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>  
     <link rel='stylesheet' href='style.css'>
 
-    <title>Lista de Compras - Salvar usuário</title>
+    <title>Usuário</title>
 </head>
 <body>
     <div class="conteudo">

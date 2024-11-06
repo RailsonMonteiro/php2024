@@ -1,16 +1,22 @@
 body {
     padding: 30px;
     margin: 0;
-    background-color: gainsboro;
+    background-color: #f8f9fa;
 }
 
 .conteudo {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     margin: 10px auto;
-    border-left: 4px solid gray;
-    width: 90%;
+    border-left: 4px solid #0fa3b1;
+    width: 50%;
+    height: 60vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:  whitesmoke;
+    background-color:  #f1faee;
+    box-shadow: 2px 2px 2px #a8a8a8;
 }
 
 h1 {
@@ -18,13 +24,13 @@ h1 {
     width: 100%;
 }
 details {
-    border-bottom: 1px dashed gray;
+    border-bottom: 1px dashed #0fa3b1;
     margin-bottom: 5px;
 }
 
 small {
     font-size: smaller;
-    color: grey;
+    color: #0fa3b1;
 }
 
 button {
@@ -34,19 +40,38 @@ button {
     background-color: inherit;
     cursor: pointer;
     line-height: 20px;
-    vertical-align: middle;
+    box-shadow: 2px 2px 2px #a8a8a8;
+    margin: 10px auto;
 }
-
+.botoes{
+    margin: auto;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.novousuario{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
 li {
     list-style-type: '#';
 }
-
+.conteudo .logo{
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 button:hover {
-    background-color: lightgrey;
-    color: #555555;
+    background-color: #778da9;
+    color: #ffffff;
 }
 
-#login {
+#login2 {
     text-align: center;
     width: 100%;
     font-style: italic;
@@ -59,7 +84,7 @@ table {
     color: #585858;
 }
 .tr01{
-    background-color: #959595;
+    background-color: #0fa3b1;
     color: white;
 }
 .codigo, .nome, .autor, .editora, .ano{
@@ -82,14 +107,22 @@ a {
 }
 
 button {
+    margin-bottom: 3px;
     margin: auto;
     color: white;
     height: 30px;
-    background-color: #7e7e7e;
+    background-color: #0fa3b1;
     text-decoration: none;
     border-radius: 3px;
 }
-label, input{
-    padding: 3px;
-    margin-bottom: 6px;
+label{
+
 }
+input{
+    padding: 3px;
+    margin-bottom: 5px;
+    border: 0.5px solid #0fa3b1;
+    border-radius: 3px;
+    
+}
+

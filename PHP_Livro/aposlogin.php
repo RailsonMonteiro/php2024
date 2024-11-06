@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>  
     <link rel='stylesheet' href='style.css'>
-    <title>Lista de Compras</title>
+    <link rel="icon" href="img/icon.png" type="32">
+    <title>Home</title>
     <script>
         function excluir() {
             event.preventdefault();
@@ -21,8 +22,10 @@
 </head>
 <body>
     <div class="conteudo">
-        <h1>Catalogo de Livros</h1>
-         <a href='incluirlivro.php'><button onclick="location.assign('incluirlivro.php')"><i class="fi fi-rr-layer-plus"></i></i> Novo</button></a>
+        <div class="logo">
+            <img src="img/novolivro.png" width="90px" height="auto">
+        </div>
+         <a href='incluirlivro.php'><button onclick="location.assign('incluirlivro.php')"> Novo Livro</button></a>
         <br><br>
 
        
