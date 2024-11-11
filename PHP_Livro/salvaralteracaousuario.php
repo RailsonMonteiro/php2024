@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="conteudo">
-        <h1>Lista de Compras - Salvando usuário</h1>
+        <div class="logo">
+            <img src="img/usuariosalvo.png" width="90px" height="auto">
+        </div>
         <?php 
             require_once('conexao.php');
             if (!validalogin()) {
@@ -31,7 +33,7 @@
                             //echo $query;
                             $stmt = $conn->prepare($query);
                             if ($stmt->execute()) {
-                                echo "Usuário: ".$_SESSION['usuario']."<br>Senha alterada com sucesso";
+                                echo "Usuário: ".$_SESSION['usuario']."<br><br>Senha alterada com sucesso";
                             }
                         } catch (PDOException $e) {
                             echo "Erro ao alterar o usuário <br>".$e->getMessage(); 

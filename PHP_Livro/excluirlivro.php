@@ -28,7 +28,7 @@
                 };
 
                 //exibir voltar
-                echo "<br>";
+                echo "<br><br>";
                 echo "<button onclick='history.back()'><i class='fi fi-rr-arrow-left'></i> Voltar</button>";
             }catch(PDOException $e) {
                 echo "<pre>";
